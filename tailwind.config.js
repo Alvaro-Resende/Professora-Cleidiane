@@ -76,7 +76,10 @@ module.exports = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  		},
+		screens: {
+        'break-1150': '1150px', // breakpoint customizado
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],

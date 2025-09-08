@@ -5,6 +5,9 @@ import { Marco } from "./_components/marco";
 import Bio from "./_components/bio";
 import { Relatos } from "./_components/relatos";
 import { Remember } from "./_components/remember";
+import  Dinamica  from "./_components/dinamica";
+import Rodape from "./_components/rodape"
+
 
 export default function Home() {
   return (
@@ -14,8 +17,10 @@ export default function Home() {
           <Apresentacao />
           <Marco />
           <Bio  />
+          <Dinamica />
           <Relatos />
           <Remember />
+          <Rodape  />
       </div>
     
   );

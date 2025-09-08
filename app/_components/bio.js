@@ -65,7 +65,7 @@ export default function Bio() {
           </h1>
 
           <span
-            className={`${lusitana.className} mt-4 text-sm sm:text-base lg:text-lg xl:text-xl text-justify max-w-[500px]`}
+            className={`${lusitana.className} mt-4 text-lg text-justify max-w-[500px]`}
           >
             Com mais de 30 anos de experiência no ensino de inglês, a Professora
             Cleidiane alia dedicação, paciência e uma metodologia adaptada a

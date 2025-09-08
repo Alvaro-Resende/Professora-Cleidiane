@@ -21,7 +21,6 @@ import {
   Users,
   Briefcase,
   Mail,
-  Phone,
   Linkedin,
   ArrowLeft,
   Download,

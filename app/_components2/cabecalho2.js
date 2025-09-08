@@ -1,26 +1,45 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { Lusitana } from "next/font/google";
+import { IoHome, IoHomeOutline } from "react-icons/io5";
 
-export default function Cabecalho2() {
+const lusitana = Lusitana({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+export default function Cabecalho() {
   const router = useRouter();
   return (
-    <div className="border-l-2 border-r-2 border-t-2 rounded-t-xl border-[#C99A45] w-full h-[100px] md:h-[98px] flex justify-center md:justify-between items-center p-5 bg-[#181C1F] gap-20">
-      <div className="relative h-[85px] w-[100px] ml-3">
-        <Image src="/imagens/Logo.png" alt="Logo da lojas" fill className="" />
+    <div className="bg-[#FF7AAC] w-full flex justify-between items-center p-2">
+      <div className="flex justify-center items-center gap-3 ">
+        <img
+          src="/imagens/dona_neide-removebg-preview.png"
+          alt="Logo do site"
+          className="h-[50px] w-[50px]"
+        />
+
+        <h1
+          className={`${lusitana.className} text-2xl italic font-semibold mt-3`}
+        >
+          Dona Cleide
+        </h1>
       </div>
 
-        <button
-          onClick={() => router.push("/")}
-          className="w-[130px] md:w-[160px] h-[48px] sm:h-[60px] rounded-xl border bg-[#BD8F42] border-white text-white transform text-xl transition hover:scale-105 sm:hover:scale-110 font-serif hover:border-white hover:text-2xl"
+      <button
+        onClick={() => router.push("/")}
+        className="group w-[180px] h-[48px] mr-2 rounded-xl bg-black text-white transform text-xl transition hover:scale-105 sm:hover:scale-110 hover:text-2xl"
+      >
+        <span
+          className={`${lusitana.className} flex justify-center items-center text-xl font-bold gap-2`}
         >
-          <span className="drop-shadow-[1px_1px_0px_rgba(0,0,0,1)]">
-            Voltar
-          </span>
-        </button>
-      
+          Ínicio
+          <IoHomeOutline className="text-white group-hover:hidden" />
+          <IoHome className="hidden group-hover:inline text-white" />
+        </span>
+      </button>
     </div>
   );
 }

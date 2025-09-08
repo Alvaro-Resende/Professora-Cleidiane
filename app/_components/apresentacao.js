@@ -13,8 +13,8 @@ export default function Apresentacao() {
   const router = useRouter();
   return (
     <section
-      className="w-full bg-[#FF7AAC] flex flex-col-reverse sm:flex-col-reverse md:flex-row 
-                 items-center md:items-center gap-8 px-12 py-12 "
+      className="w-full bg-[#FF7AAC] flex flex-col-reverse break-1150:flex-row sm:flex-col-reverse md:flex-row 
+                 items-center md:items-center gap-8 px-12 py-8 overflow-hidden"
     >
       <div className="flex flex-col gap-6 justify-start items-start w-full md:w-[600px]">
         <h1
@@ -35,7 +35,7 @@ export default function Apresentacao() {
         </button>
       </div>
 
-      <div className="relative w-full max-w-[350px] md:max-w-[500px] flex justify-start items-start mb-8 md:mb-0">
+      <div className="relative w-full max-w-[380px] md:max-w-[500px] flex justify-start items-start mb-8 md:mb-0 mr-10">
         <div className="relative z-30 w-full">
           <img
             src="/imagens/1.png"

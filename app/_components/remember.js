@@ -10,12 +10,7 @@ const lusitana = Lusitana({
 
 export function Remember() {
   return (
-    <div className="w-full bg-[#FF7AAC] flex flex-col justify-center items-center p-2 mt-8">
-      <h1
-        className={`${lusitana.className} text-2xl sm:text-3xl lg:text-4xl xl:text-3xl italic text-center font-bold`}
-      >
-        Lembre-se, onde há vontade, há caminho!
-      </h1>
+    <div className="w-full bg-[#FF7AAC] flex flex-col justify-center items-center p-1 mt-8">
       <h1
         className={`${lusitana.className} text-2xl text-white sm:text-3xl lg:text-4xl xl:text-3xl italic text-center font-bold`}
       >

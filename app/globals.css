@@ -82,7 +82,47 @@
 }
 
 @media print {
+  /* Oculta botões e elementos de navegação */
   .no-print {
     display: none !important;
   }
+
+  /* Usa largura total da página para aproveitar melhor o espaço */
+  main {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* Reduz margens automáticas do navegador */
+  @page {
+    margin: 20mm;
+  }
+
+  /* Ajusta fontes para caber mais conteúdo */
+  body {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Faz grids virarem uma coluna para não "explodirem" a largura */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Remove sombras e bordas desnecessárias */
+  .card, .Card, .border {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.rbc-toolbar-label {
+  font-weight: bold;       /* deixa em negrito */
+  color: #FF7AAC;          /* exemplo: vermelho-rosa */
+  font-size: 1.2rem;       /* opcional, aumenta um pouco */
+  text-transform: uppercase; /* deixa maiúsculo */
+}
+
+.placeholder-normal::placeholder {
+  font-style: normal; /* remove o italic do placeholder */
 }

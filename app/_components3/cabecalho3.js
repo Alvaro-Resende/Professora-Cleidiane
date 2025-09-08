@@ -13,16 +13,16 @@ const lusitana = Lusitana({
 export default function Cabecalho3() {
   const router = useRouter();
   return (
-    <div className="bg-[#FF7AAC] w-full flex flex-col sm:flex-row justify-between items-center p-2 sm:p-3 gap-3 sm:gap-0">
+    <div className="bg-[#FF7AAC] w-full flex flex-col sm:flex-row justify-between items-center p-2 gap-3 sm:gap-0">
       {/* Logo + Título */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3">
         <img
           src="/imagens/dona_neide-removebg-preview.png"
           alt="Logo do site"
-          className="h-[50px] w-[50px] sm:h-[60px] sm:w-[60px]"
+          className="h-[50px] w-[50px]"
         />
         <h1
-          className={`${lusitana.className} text-xl sm:text-2xl italic font-semibold mt-1 sm:mt-0`}
+          className={`${lusitana.className} text-xl sm:text-2xl italic font-semibold mt-3`}
         >
           Dona Cleide
         </h1>
