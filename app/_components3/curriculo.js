@@ -3,16 +3,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Card, CardHeader, CardTitle, CardContent } from "components/ui/card";
+import { Badge } from "components/ui/badge";
+import { Button } from "components/ui/button";
+import { Separator } from "components/ui/separator";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "@/components/ui/accordion";
+} from "components/ui/accordion";
 import {
   GraduationCap,
   Award,
@@ -35,7 +35,7 @@ export const lusitana = Lusitana({
 
 export default function CurriculoCleidiane() {
   const whatsappLink =
-    "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20Prof%C2%AA%20Cleidiane!%20Gostaria%20de%20conhecer%20melhor%20seu%20trabalho%20e%20ver%20disponibilidades%20para%20aulas.";
+    "https://wa.me/553597539844?text=Ol%C3%A1%2C%20Prof%C2%AA%20Cleidiane!%20Gostaria%20de%20conhecer%20melhor%20seu%20trabalho%20e%20ver%20disponibilidades%20para%20aulas.";
 
   return (
     <main

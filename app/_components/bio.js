@@ -5,7 +5,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from "components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Lusitana } from "next/font/google";
 
