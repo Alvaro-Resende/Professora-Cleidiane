@@ -4,15 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "components/ui/card";
-import { Badge } from "components/ui/badge";
-import { Button } from "components/ui/button";
-import { Separator } from "components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from "components/ui/accordion";
+} from "@/components/ui/accordion";
 import {
   GraduationCap,
   Award,
